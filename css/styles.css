@@ -1,0 +1,228 @@
+@media (max-width: 630px) {
+  body #mobile-button {
+    display: block;
+  }
+  body #mobile-menu {
+    display: none;
+  }
+  body .post {
+    width: 50%;
+  }
+  body .menu {
+    display: none;
+  }
+  body .nav-sec {
+    justify-content: space-between;
+  }
+  body .sec-one .sec {
+    width: 100%;
+  }
+}
+@media (min-width: 631px) and (max-width: 1024px) {
+  body #mobile-button {
+    display: none;
+  }
+  body .mobile {
+    display: none;
+  }
+  body .post {
+    width: 33%;
+  }
+  body .menu {
+    display: flex;
+  }
+  body .nav-sec {
+    justify-content: space-between;
+  }
+  body .sec-one .one,
+  body .sec-one .two {
+    width: 50%;
+  }
+  body .sec-one .three {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1800px) {
+  body #mobile-button {
+    display: none;
+  }
+  body .mobile {
+    display: none;
+  }
+  body .post {
+    width: 25%;
+  }
+  body .menu {
+    display: flex;
+  }
+  body .nav {
+    align-items: center;
+  }
+  body .nav-sec {
+    justify-content: space-between;
+  }
+  body .sec-one .sec {
+    width: 33%;
+  }
+}
+body {
+  margin: 0px;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 6px #777371;
+}
+body header .header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+body header .header a {
+  color: #031714;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body header .header a:hover {
+  color: grey;
+}
+body header .nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+body header .nav .nav-sec {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+body header .nav .nav-sec #mobile-button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+body header .nav .nav-sec .menu {
+  padding: 0px;
+  width: 100%;
+  max-width: 1200px;
+}
+body header .nav .nav-sec .menu li {
+  list-style-type: none;
+}
+body header .nav .nav-sec .menu li a {
+  color: #031714;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 5px 50px 5px 0px;
+}
+body header .nav .nav-sec .menu li a:hover {
+  border-bottom: 2px solid #031714;
+}
+body header .nav .nav-sec .menu li ul {
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  margin: 0px;
+  padding: 10px 0px 10px 20px;
+}
+body header .nav .nav-sec .mobile {
+  position: absolute;
+  background-color: #fff;
+  z-index: 999;
+}
+body header .nav .search {
+  display: flex;
+  border: 1px solid #031714;
+  border-radius: 25px;
+  margin: 15px 0px;
+  padding: 10px;
+  height: 38px;
+}
+body header .nav .search input {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+body header .nav .search button {
+  background-color: transparent;
+  color: #031714;
+  border: none;
+}
+body header .nav .search button:hover {
+  cursor: pointer;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main h1,
+body main h2,
+body main .title,
+body main .date {
+  font-family: "Noto Sans TC", sans-serif;
+}
+body main .blog-posts {
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+body main .blog-posts .posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .blog-posts .posts .post {
+  height: 300px;
+}
+body main .blog-posts .posts .post a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px 10px 0px 0px;
+}
+body main .blog-posts .posts .post a .blog-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-top: -63.5px;
+  z-index: 999;
+}
+body main .blog-posts .posts .post a .blog-info .title p {
+  margin: 5px;
+}
+body main .blog-posts .posts .post a .blog-info .date p {
+  margin: 5px;
+}
+body main .blog-posts .posts .post a .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  opacity: 75%;
+}
+body main .blog-posts .posts .post a .img:hover {
+  opacity: 100%;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d1e4e2;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body footer .sec-one {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+body footer .sec-two {
+  padding: 10px;
+}
+body footer .sec-two i {
+  font-size: 24px;
+  padding: 10px;
+}
