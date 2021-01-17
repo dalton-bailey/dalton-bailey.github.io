@@ -1,0 +1,3 @@
+[submodule "dgm3740-template"]
+	path = dgm3740-template
+	url = https://github.com/dalton-bailey/dgm3740-template.git
