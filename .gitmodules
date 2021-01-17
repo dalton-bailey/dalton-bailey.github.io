@@ -1,3 +1,6 @@
 [submodule "workout-tracker"]
 	path = workout-tracker
 	url = https://github.com/dalton-bailey/workout-tracker.git
+[submodule "dgm3740-template"]
+	path = dgm3740-template
+	url = https://github.com/dalton-bailey/dgm3740-template.git
