@@ -2,3 +2,6 @@
 	path = workout-tracker
 	url = https://github.com/dalton-bailey/workout-tracker.git
 
+[submodule "dalton-bailey.github.io"]
+	path = dalton-bailey.github.io
+	url = https://github.com/dalton-bailey/dalton-bailey.github.io.git
