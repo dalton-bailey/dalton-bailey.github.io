@@ -138,9 +138,9 @@ header a:hover {
   display: flex;
   border: 1px solid #031714;
   border-radius: 25px;
-  padding: 8px;
+  padding: 5px;
   width: 190px;
-  margin-top: 4px;
+  margin-top: 7px;
 }
 .search input {
   background-color: transparent;
@@ -299,6 +299,16 @@ h2,
 #footerWrapper footer .sec-two i {
   font-size: 24px;
   padding: 10px;
+}
+
+#copyright {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: gray;
+}
+#copyright a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
