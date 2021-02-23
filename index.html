@@ -13,16 +13,19 @@
 
 <body>
     <header>
-        <div>
-            <p>B</p>
+        <div id="header">
+            <div>
+                <p>B</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
     </header>
     <main>
         <div class="bio-snippet">
@@ -31,11 +34,14 @@
         <div id="project-gallery">
             <div class="project">
                 <a href="https://dgm2780.netlify.app/" class="project-a">
-                    <div class="img" style="background-image: url(/images/road_warriors.jpg)">
+                    <div style="background-color: rgba(0,0,0,0.3); height: 100%; width: 100%;">
+                        <div class="img" style="background-image: url(/images/road_warriors.jpg)">
 
+                        </div>
+                        <p class="project-name">Road Warriors</p>
+                        <p class="project-description">A website built with simple CSS, HTML, and JavaScript</p>
                     </div>
-                    <p class="project-name">Road Warriors</p>
-                    <p class="project-description">A website built with simple CSS, HTML, and JavaScript</p>
+
                 </a>
             </div>
         </div>

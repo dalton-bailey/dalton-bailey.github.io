@@ -4,11 +4,19 @@ body {
 
 body header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body header #header {
+  width: 60%;
+  max-width: 1200px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-body header div {
+body header #header div {
   background-color: #000;
   color: #fff;
   border-radius: 50%;
@@ -19,41 +27,41 @@ body header div {
   align-items: center;
 }
 
-body header div p {
+body header #header div p {
   margin: 0px;
   padding-bottom: 3px;
   font-size: 30px;
 }
 
-body header nav ul {
+body header #header nav ul {
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-body header nav ul li {
+body header #header nav ul li {
   list-style-type: none;
   padding: 15px;
 }
 
-body header nav ul li a {
+body header #header nav ul li a {
   text-decoration: none;
   color: #000;
   display: inline-block;
   font-size: 18px;
 }
 
-body header nav ul li a::after {
+body header #header nav ul li a::after {
   content: "";
   display: block;
   margin: auto;
   width: 0;
   height: 2px;
   background: #000;
-  transition: width .5s ease;
+  transition: width 0.5s ease;
 }
 
-body header nav ul li a:hover::after {
+body header #header nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -64,7 +72,8 @@ body main {
 }
 
 body main .bio-snippet {
-  width: 1200px;
+  width: 60%;
+  max-width: 1200px;
   margin: 50px 0px;
 }
 
@@ -85,17 +94,12 @@ body main #project-gallery .project .project-a {
   text-decoration: none;
 }
 
-body main #project-gallery .project .project-a .img {
+body main #project-gallery .project .project-a div .img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 
-body main #project-gallery .project .project-a p {
+body main #project-gallery .project .project-a div p {
   display: none;
-}
-
-body main #project-gallery .project .project-a .img:hover .project-name {
-  display: block;
-  color: red;
 }

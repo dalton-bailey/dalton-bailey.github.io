@@ -10,52 +10,60 @@ body {
   font: 100% $font;
   header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    div {
-      background-color: $color-3;
-      color: $color-1;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
+    #header {
+      width: 60%;
+      max-width: 1200px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      p {
-        margin: 0px;
-        padding-bottom: 3px;
-        font-size: 30px;
-      }
-    }
 
-    nav {
-      ul {
+      div {
+        background-color: $color-3;
+        color: $color-1;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
         display: flex;
-        padding: 0;
-        margin: 0;
-        li {
-          list-style-type: none;
-          padding: 15px;
+        justify-content: center;
+        align-items: center;
+        p {
+          margin: 0px;
+          padding-bottom: 3px;
+          font-size: 30px;
+        }
+      }
 
-          a {
-            text-decoration: none;
-            color: $color-3;
-            display: inline-block;
-            font-size: 18px;
-          }
+      nav {
+        ul {
+          display: flex;
+          padding: 0;
+          margin: 0;
+          li {
+            list-style-type: none;
+            padding: 15px;
 
-          a::after {
-            content: "";
-            display: block;
-            margin: auto;
-            width: 0;
-            height: 2px;
-            background: #000;
-            transition: width .5s ease;;
-          }
-       
-          a:hover::after {
+            a {
+              text-decoration: none;
+              color: $color-3;
+              display: inline-block;
+              font-size: 18px;
+            }
+
+            a::after {
+              content: "";
+              display: block;
+              margin: auto;
+              width: 0;
+              height: 2px;
+              background: #000;
+              transition: width 0.5s ease;
+            }
+
+            a:hover::after {
               width: 100%;
+            }
           }
         }
       }
@@ -66,7 +74,8 @@ body {
     flex-direction: column;
     align-items: center;
     .bio-snippet {
-      width: 1200px;
+      width: 60%;
+      max-width: 1200px;
       margin: 50px 0px;
       .snippet {
         font-size: 48px;
@@ -78,24 +87,26 @@ body {
       .project {
         height: 300px;
         width: 33%;
+
+
         .project-a {
           text-decoration: none;
-          .img {
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
+
+          div {
+            .img {
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                
+              }
+    
+              p {
+                display: none;
+              }
+
           }
 
-          p {
-            display: none;
-          }
 
-          .img:hover {
-            .project-name {
-              display: block;
-              color: red;
-            }
-          }
         }
       }
     }
