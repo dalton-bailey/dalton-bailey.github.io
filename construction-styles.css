@@ -12,6 +12,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
+  margin: 0 20px;
 }
 .construction i {
   font-size: 90px;
@@ -27,6 +28,7 @@ html, body {
   font-size: 20px;
   color: black;
   margin-top: 0.5rem;
+  text-align: center;
 }
 .construction .options {
   display: flex;

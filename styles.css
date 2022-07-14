@@ -110,11 +110,9 @@ body main #project-gallery {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  margin: 50px 0px;
+  padding: 0 20px;
 }
 body main #project-gallery .project {
-  height: 230px;
-  width: 28%;
   box-shadow: 5px 10px 18px #b8b8b8;
   border-radius: 10px;
 }
@@ -181,11 +179,28 @@ body footer div a:hover {
   #mobile-nav {
     display: none;
   }
-}
 
+  #project-gallery {
+    margin: 50px 0px;
+  }
+
+  .project {
+    width: 28%;
+    height: 230px;
+  }
+}
 @media screen and (max-width: 480px) {
   #nav {
     display: none;
+  }
+
+  #project-gallery {
+    margin: 20px 0px;
+  }
+
+  .project {
+    height: 100px;
+    width: 28%;
   }
 }
 
