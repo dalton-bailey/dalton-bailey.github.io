@@ -81,6 +81,7 @@ body header #header #nav ul li a:hover::after {
 body header #header .social {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 body header #header .social a {
   color: #cb2901;
