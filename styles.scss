@@ -8,6 +8,7 @@ $color-3: #f2a2a2;
 $color-4: #fff1d4;
 $color-5: #212529;
 $color-6: #f57d7a;
+$color-7: #FFE9B7;
 
 //media querys
 $small: 900px;
@@ -376,7 +377,7 @@ body {
     position: absolute;
     width: 70px;
     height: 70px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
   }
 
@@ -385,7 +386,7 @@ body {
     margin: 150px 600px;
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(60deg);
   }
@@ -395,7 +396,7 @@ body {
     content: "";
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(-60deg);
   }
@@ -405,7 +406,7 @@ body {
     content: "";
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(60deg);
   }
@@ -424,7 +425,7 @@ body {
     margin: 450px 1550px;
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(60deg);
   }
@@ -434,7 +435,7 @@ body {
     content: "";
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(-60deg);
   }
@@ -444,7 +445,7 @@ body {
     content: "";
     width: 280px;
     height: 100px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
     transform: rotate(60deg);
   }
@@ -536,7 +537,7 @@ body {
     position: absolute;
     width: 70px;
     height: 70px;
-    background: $color-4;
+    background: $color-7;
     border-radius: 50px;
   }
 
