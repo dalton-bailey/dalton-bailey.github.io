@@ -3,11 +3,11 @@ $font: "Lato", sans-serif;
 
 //colors
 $color-1: #f2f2f2;
-$color-2: #CB2901;
+$color-2: #cb2901;
 $color-3: #f2a2a2;
 $color-4: #ffe9b7;
 $color-5: #212529;
-$color-6: #F57D7A;
+$color-6: #f57d7a;
 
 //media querys
 $small: 900px;
@@ -124,13 +124,11 @@ body {
       align-items: center;
 
       .snippet {
-        font-size: 60px;
-        font-weight: 600;
         color: $color-2;
-        margin: 0 0 20px 0;
+        margin: 0;
         padding: 0;
         text-align: center;
-        // text-shadow: 2px 2px 12px #888888;      
+        // line-height: ;
       }
 
       .contact-btn {
@@ -139,16 +137,14 @@ body {
         text-decoration: none;
         padding: 15px 20px;
         font-size: 20px;
-        margin-top: 15px;
-        transition: transform .6s;
-
+        margin-top: 30px;
+        transition: transform 0.6s;
 
         &:hover {
           transform: translateY(-15px);
-
         }
       }
-      
+
       .scroll-btn {
         width: 50px;
         height: 50px;
@@ -235,7 +231,7 @@ body {
                 .arrow-btn {
                   align-self: flex-end;
                   padding: 20px;
-                  transition: transform .5s;
+                  transition: transform 0.5s;
 
                   i {
                     font-size: 22px;
@@ -277,7 +273,11 @@ body {
     }
   }
   .bio-snippet {
-      height: 100vh;
+    height: 100vh;
+    .snippet {
+      font-size: 60px;
+      line-height: 70px;
+    }
   }
   #mobile-nav {
     display: none;
@@ -292,55 +292,292 @@ body {
     width: 28%;
     height: 230px;
   }
-    .row {
-      display: flex;
-      // height: 550px;
-    }
-    .col-5 {
-      width: 50%;
-    }
-    .about-bio {
-      font-size: 20px;
-    }
-    .picture-bubbles {
-      margin-left: 95px;
-    }
-    .about-snippet {
-      margin-right: 25px;
-    }
-    .profile-pic {
-      background-image: url(./images/profile.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      margin: 70px 0 0 0;
-    }
-    .biking {
-      background-image: url(./images/mtnbiking.JPG);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      position: absolute;
-      margin: -60px 0 0 260px;
-      z-index: -2;
-    }
-    .skiing {
-      background-image: url(./images/skiing.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      margin: -340px 0 0 300px;
-
-    }
+  .row {
+    display: flex;
+    // height: 550px;
   }
+  .col-5 {
+    width: 50%;
+  }
+  .about-bio {
+    font-size: 20px;
+  }
+  .picture-bubbles {
+    margin-left: 95px;
+  }
+  .about-snippet {
+    margin-right: 25px;
+  }
+  .profile-pic {
+    background-image: url(./images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 70px 0 0 0;
+  }
+  .biking {
+    background-image: url(./images/mtnbiking.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    margin: -60px 0 0 260px;
+    z-index: -2;
+  }
+  .skiing {
+    background-image: url(./images/skiing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    margin: -340px 0 0 300px;
+  }
+
+  /* flower 2 */
+  .petal-2 {
+    margin: -34px 1239px;
+    width: 280px;
+    height: 100px;
+    background: $color-3;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-2:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-3;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-2:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-3;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-2 {
+    margin: -59px 1342px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-4;
+    border-radius: 50px;
+  }
+
+  /* flower 3 */
+  .petal-3 {
+    margin: 150px 600px;
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-3:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-3:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-3 {
+    margin: -235px 705px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-2;
+    border-radius: 50px;
+  }
+
+  /* flower 4 */
+  .petal-4 {
+    margin: 450px 1550px;
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-4:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-4:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-4 {
+    margin: -535px 1655px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-3;
+    border-radius: 50px;
+  }
+
+  /* flower 5 */
+  .petal-5 {
+    margin: 740px 1000px;
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-5:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-5:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-5 {
+    margin: -830px 1105px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-3;
+    border-radius: 50px;
+  }
+  /* flowers */
+  /* flower 1 */
+  .flower {
+    z-index: -3;
+    position: absolute;
+  }
+  .petal-1 {
+    margin: -20px 40px;
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-1:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-1:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-1 {
+    margin: -110px 139px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-4;
+    border-radius: 50px;
+  }
+
+  /* flower 6 */
+  .petal-6 {
+    margin: 600px 200px;
+    width: 280px;
+    height: 100px;
+    background: $color-6;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .petal-6:before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-6;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
+
+  .petal-6:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 100px;
+    background: $color-6;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
+
+  .middle-6 {
+    margin: -680px 306px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: $color-1;
+    border-radius: 50px;
+  }
+}
 
 @media screen and (max-width: $medium) {
   .about-snippet {
@@ -363,7 +600,7 @@ body {
     display: none;
   }
   .skiing {
-   display: none;
+    display: none;
   }
 }
 
@@ -380,7 +617,7 @@ body {
     }
     .bio-snippet {
       height: 50vh;
-  }
+    }
     #mobile-nav-btn {
       display: flex;
       justify-content: flex-end;
@@ -389,10 +626,14 @@ body {
       top: 0;
       margin-right: -10px;
       z-index: 4;
+
+      &:hover {
+        cursor: pointer;
+      }
       i {
-        font-size: 22px;
+        font-size: 28px;
         background-color: $color-4;
-        padding: 10px;
+        padding: 15px;
         color: $color-2;
       }
     }
@@ -400,10 +641,12 @@ body {
     #mobile-nav-close {
       display: flex;
       justify-content: flex-end;
-      padding: 24px 2.1rem 0 0;
-    
+      padding: 28px 2.5rem 0 0;
+      &:hover {
+        cursor: pointer;
+      }
       i {
-        font-size: 26px;
+        font-size: 32px;
         color: $color-2;
       }
     }
@@ -430,8 +673,7 @@ body {
             text-decoration: none;
             color: $color-2;
             display: inline-block;
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 30px;
           }
 
           a:hover {
@@ -458,7 +700,7 @@ body {
         margin-top: 50px;
         a {
           color: $color-2;
-          font-size: 24px;
+          font-size: 38px;
           padding: 8px 15px;
           text-align: center;
         }
@@ -491,245 +733,85 @@ body {
       font-size: 20px;
       margin: 20px 0 0 0;
     }
- 
   }
-}
+  .small-flower {
+    z-index: -3;
+    position: absolute;
+  }
+  /* small flower 1 */
+  .small-petal-1 {
+    margin: 50px 20px;
+    width: 140px;
+    height: 50px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
 
-/* flowers */
-/* flower 1 */
-.flower {
-  z-index: -3;
-  position: absolute;
-}
-.petal-1 {
-  margin: 20px 40px;
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
+  .small-petal-1:before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 50px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
 
-.petal-1:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
+  .small-petal-1:after {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 50px;
+    background: $color-2;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
 
-.petal-1:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
+  .small-middle-1 {
+    margin: -93px 75px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: $color-4;
+    border-radius: 50px;
+  }
+  /* small flower 2 */
+  .small-petal-2 {
+    margin: 432px 210px;
+    width: 140px;
+    height: 50px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
 
-.middle-1 {
-  margin: -110px 139px;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-4;
-  border-radius: 50px;
-}
+  .small-petal-2:before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 50px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(-60deg);
+  }
 
-/* flower 2 */
-.petal-2 {
-  margin: -34px 1239px;
-  width: 280px;
-  height: 100px;
-  background: $color-3;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
+  .small-petal-2:after {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 50px;
+    background: $color-4;
+    border-radius: 50px;
+    transform: rotate(60deg);
+  }
 
-.petal-2:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-3;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
-
-.petal-2:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-3;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.middle-2 {
-  margin: -59px 1342px;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-4;
-  border-radius: 50px;
-}
-
-/* flower 3 */
-.petal-3 {
-  margin: 200px 600px;
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.petal-3:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
-
-.petal-3:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.middle-3 {
-  margin: -285px 700px;  
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-2;
-  border-radius: 50px;
-}
-
-/* flower 4 */
-.petal-4 {
-  margin: 450px 1550px;
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.petal-4:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
-
-.petal-4:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-4;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.middle-4 {
-  margin: -535px 1655px;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-3;
-  border-radius: 50px;
-}
-
-/* flower 5 */
-.petal-5 {
-  margin: 740px 1000px;
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.petal-5:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
-
-.petal-5:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-2;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.middle-5 {
-  margin: -830px 1105px;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-3;
-  border-radius: 50px;
-}
-
-/* flower 6 */
-.petal-6 {
-  margin: 600px 200px;
-  width: 280px;
-  height: 100px;
-  background: $color-6;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.petal-6:before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-6;
-  border-radius: 50px;
-  transform: rotate(-60deg);
-}
-
-.petal-6:after {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 100px;
-  background: $color-6;
-  border-radius: 50px;
-  transform: rotate(60deg);
-}
-
-.middle-6 {
-  margin: -680px 306px;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: $color-1;
-  border-radius: 50px;
+  .small-middle-2 {
+    margin: -474px 265px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: $color-2;
+    border-radius: 50px;
+  }
 }
