@@ -580,6 +580,9 @@ body main #contact .col-5 {
   }
   body main {
     padding: 0 2rem;
+    background-image: url("./images/Screen Shot 2022-07-16 at 11.03.35 PM.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   body .hide {
     display: none;
